@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+:root {
+  --primary-01: hsl(185, 91%, 17%);
+  --primary-02: hsl(185, 84%, 25%);
+  --primary-03: hsl(185, 81%, 29%);
+  --primary-04: hsl(185, 77%, 34%);
+  --primary-05: hsl(185, 62%, 45%);
+  --primary-06: hsl(185, 57%, 50%);
+  --primary-07: hsl(184, 65%, 59%);
+  --primary-08: hsl(184, 80%, 74%);
+  --primary-09: hsl(185, 94%, 87%);
+  --primary-10: hsl(186, 100%, 94%);
+  --gray-01: hsl(209, 61%, 16%);
+  --gray-02: hsl(211, 39%, 23%);
+  --gray-03: hsl(209, 35%, 30%);
+  --gray-04: hsl(209, 28%, 39%);
+  --gray-05: hsl(209, 22%, 49%);
+  --gray-06: hsl(209, 23%, 60%);
+  --gray-07: hsl(211, 27%, 70%);
+  --gray-08: hsl(210, 31%, 80%);
+  --gray-09: hsl(213, 32%, 89%);
+  --gray-10: hsl(206, 33%, 96%);
+  --white: #fff;
+  --black: #222;
+  --dark-red: hsl(360, 67%, 44%);
+  --light-red: hsl(360, 71%, 66%);
+  --dark-green: hsl(125, 67%, 44%);
+  --light-green: hsl(125, 71%, 66%);
+  --danger-text: hsl(354, 61%, 28%);
+  --danger-background: hsl(355, 70%, 91%);
+  --success-text: hsl(134, 61%, 21%);
+  --success-background: hsl(134, 41%, 88%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 300ms linear;
+  --small-text: 0.8rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--gray-10);
+  color: var(--gray-01);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--gray-05);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.button {
+  display: block;
+  border: none;
+  border-radius: 0.25rem;
+  background: var(--primary-05);
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  margin: 1.5rem auto 0 auto;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.button-rounded {
+  border-radius: 2rem;
+}
+
+.button:hover {
+  background: var(--primary-07);
+  color: var(--black);
+}
+
+.section {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.error {
+  color: var(--dark-red);
+}
+
+.loading {
+  display: grid;
+  place-items: center;
+  margin-top: 10rem;
+}
+
+.loading > img {
+  width: 90%;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
